@@ -35,7 +35,7 @@
                     <TextBox x:Name="tbEmail" FontSize="14" Padding="1 0" Margin="5"/>
                     <TextBlock Text="Пароль:" FontSize="18"/>
                     <PasswordBox x:Name="tbPassword" FontSize="14" Padding="1 0" Margin="5"/>
-                    <TextBlock Text="Пароль повтор:" FontSize="18"/>
+                    <TextBlock FontSize="18"><Run Text="Пароль повтор"/><Run Language="ru-ru" Text="но"/><Run Text=":"/></TextBlock>
                     <PasswordBox x:Name="tbPassword2" FontSize="14" Padding="1 0" Margin="5"/>
                     <Button x:Name="btnLogin" Background="#FF96FF96" Content="Зарегистрироваться" FontSize="26" Margin="15" Padding="0" Click="btnLogin_Click"/>
                     <Button x:Name="btnGoBack" Content="Авторизация" FontWeight="ExtraLight" HorizontalAlignment="Center" FontSize="20" Margin="15" Padding="25 0" Click="btnLogin_Click_1"/>
