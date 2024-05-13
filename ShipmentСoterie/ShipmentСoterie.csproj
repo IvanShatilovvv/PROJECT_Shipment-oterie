@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\1681528233-4.png" />
+    <None Remove="Images\2048x1365_1341170_[www.ArtFile.ru].jpg" />
+    <None Remove="Images\3-conseils-contre-les-arnaques-carte-bancaire.jpg" />
+    <None Remove="Images\4285652.jpeg" />
+    <None Remove="Images\5DkFJsyC5Ck1P4rL8WLSWQ.jpg" />
+    <None Remove="Images\auo7jrica7vaz7qln1isnwvjxcngn0vf.jpg" />
+    <None Remove="Images\Birnbaum.jpg" />
+    <None Remove="Images\bkfb846172e1k394yc3j48fyzew2o2vd.jpg" />
+    <None Remove="Images\food2.jpg" />
+    <None Remove="Images\makarons_catalog_cvetov_big.jpg" />
+    <None Remove="Images\otdelnosti-75.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.18">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.18">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\1681528233-4.png" />
+    <Resource Include="Images\2048x1365_1341170_[www.ArtFile.ru].jpg" />
+    <Resource Include="Images\3-conseils-contre-les-arnaques-carte-bancaire.jpg" />
+    <Resource Include="Images\4285652.jpeg" />
+    <Resource Include="Images\5DkFJsyC5Ck1P4rL8WLSWQ.jpg" />
+    <Resource Include="Images\auo7jrica7vaz7qln1isnwvjxcngn0vf.jpg" />
+    <Resource Include="Images\Birnbaum.jpg" />
+    <Resource Include="Images\bkfb846172e1k394yc3j48fyzew2o2vd.jpg" />
+    <Resource Include="Images\food2.jpg" />
+    <Resource Include="Images\makarons_catalog_cvetov_big.jpg" />
+    <Resource Include="Images\otdelnosti-75.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1 @@
+Data Source=localhost;Initial Catalog=coterie;Integrated Security=True;User ID=;Password=;Trust Server Certificate=True
