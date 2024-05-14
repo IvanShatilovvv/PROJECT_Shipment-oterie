@@ -36,17 +36,17 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <StackPanel Grid.Row="1" Grid.Column="1" Margin="15 25" Background="AliceBlue" VerticalAlignment="Center">
-            <TextBlock Text="Итого:" Margin="25 0" FontSize="32"/>
-            <TextBlock Text="доставка" FontSize="18"/>
-            <TextBlock x:Name="tbDel" FontSize="18" TextAlignment="Center" Foreground="Green"/>
-            <TextBlock Text="личная скидка" FontSize="18"/>
-            <TextBlock x:Name="tbDisc" FontSize="18" Foreground="Red"/>
-            <TextBlock Text="к олате:" FontSize="18" TextAlignment="Center" FontWeight="SemiBold"/>
-            <TextBlock x:Name="tbTotal" FontSize="22" FontWeight="SemiBold" Margin="20 0"/>
-            <TextBlock Text="выберите способ оплаты:" FontSize="18" Margin="10 10 10 0"/>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="15,0,15,0" Background="AliceBlue" VerticalAlignment="Center" Height="387">
+            <TextBlock Text="ИТОГО:" Margin="25 0" FontWeight="SemiBold" FontSize="32" Width="116"/>
+            <TextBlock Text="Стоимость доставки:" Width="360" FontSize="18"/>
+            <TextBlock x:Name="tbDel" FontSize="18" Width="360" Foreground="Green"/>
+            <TextBlock Text="Ваша личная скидка:" Width="360" FontSize="18"/>
+            <TextBlock x:Name="tbDisc" FontSize="18" Width="360" Foreground="Red"/>
+            <TextBlock FontSize="18" FontWeight="SemiBold" Width="360"><Run Text="Итого к о"/><Run Language="ru-ru" Text="п"/><Run Text="лате:"/></TextBlock>
+            <TextBlock x:Name="tbTotal" FontSize="22" FontWeight="SemiBold" Width="360"/>
+            <TextBlock Text="Выберите удобный Вам способ оплаты:" FontSize="18" Margin="10 10 10 0"/>
             <ComboBox x:Name="cbTypes" DisplayMemberPath="name" FontSize="14" Margin="5"/>
-            <Button Content="Оплатить" FontSize="20" Margin="10" Click="Button_Click_2"/>
+            <Button Content="Оплатить" FontSize="20" Margin="15" Click="Button_Click_2"/>
         </StackPanel>
     </Grid>
 </Page>
