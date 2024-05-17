@@ -64,7 +64,7 @@ namespace ShipmentСoterie.Pages
                 type = cbType.SelectedItem as ProductType, photo = image.Source.ToString() };
             db.product.Add(newPr);
             db.SaveChanges();
-            MessageBox.Show("ok");
+            MessageBox.Show("Окей");
         }
     }
 }
