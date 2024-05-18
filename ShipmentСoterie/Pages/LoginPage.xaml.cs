@@ -49,7 +49,7 @@ namespace ShipmentСoterie.Pages
                     }
                 }
             }
-            MessageBox.Show("Ошибка входа");
+            MessageBox.Show("Вход не удался", "Ошибка");
         }
     }
 }

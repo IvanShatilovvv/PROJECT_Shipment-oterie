@@ -52,7 +52,7 @@ namespace ShipmentСoterie.Pages
                 User newUser = new() { login=tbLogin.Text, email=tbEmail.Text, password=tbPass.Text, role=cbRole.SelectedItem as Role, profile=newProfile };
                 db.user.Add(newUser);
                 db.SaveChanges();
-                MessageBox.Show("Успешное добавление");
+                MessageBox.Show("Добавление успешно");
                 MainWindow.mainFrame.Navigate(new UserAdministrationPage());
             }
             catch (Exception ex)
@@ -64,7 +64,7 @@ namespace ShipmentСoterie.Pages
 
         private void btnGoBack_Click(object sender, RoutedEventArgs e)
         {
-            var a = MessageBox.Show("Изменения будут утеряны", "", MessageBoxButton.YesNo);
+            var a = MessageBox.Show("Изменения будут утеряны", "Предупреждение", MessageBoxButton.YesNo);
             if (a == MessageBoxResult.Yes)
             {
                 MainWindow.mainFrame.Navigate(new UserAdministrationPage());

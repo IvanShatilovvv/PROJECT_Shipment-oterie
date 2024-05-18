@@ -54,7 +54,7 @@ namespace ShipmentСoterie.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var a = MessageBox.Show("Вы уверены в том, что хотите выйти из учетной записи?","Выйти?", MessageBoxButton.YesNo);
+            var a = MessageBox.Show("Вы уверены в том, что хотите выйти из учетной записи?","ВЫХОД", MessageBoxButton.YesNo);
             if(a==MessageBoxResult.Yes)
             {
                 MainWindow.mainFrame.Navigate(new LoginPage());
@@ -63,7 +63,7 @@ namespace ShipmentСoterie.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var a = MessageBox.Show("Сохранить изменения?","Сохранить?", MessageBoxButton.YesNo);
+            var a = MessageBox.Show("Сохранить изменения?","Сохранение", MessageBoxButton.YesNo);
             if (a==MessageBoxResult.Yes)
             {
                 Profile tempProfile = db.profile.Where(x => x.id == MainWindow.curUser.profileId).FirstOrDefault();

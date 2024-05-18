@@ -53,7 +53,7 @@ namespace ShipmentСoterie.Pages
 
             var tempUser = dgMain.SelectedItem as User;
 
-            var a = MessageBox.Show($"Удалить пользователя [ {tempUser.login} ] ?", "Confirm", MessageBoxButton.YesNo);
+            var a = MessageBox.Show($"Удалить пользователя [ {tempUser.login} ]?", "Подтверждение", MessageBoxButton.YesNo);
             if(a==MessageBoxResult.Yes) db.user.Remove(tempUser);
             db.SaveChanges();
             dgMain.ItemsSource = db.user.ToList();

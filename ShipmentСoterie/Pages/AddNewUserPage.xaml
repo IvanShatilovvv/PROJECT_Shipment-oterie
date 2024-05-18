@@ -19,11 +19,8 @@
             </Image.Effect>
         </Image>
 
-        <Button x:Name="btnGoBack" HorizontalAlignment="Left" FontSize="28" Padding="5 0" 
-                VerticalAlignment="Top" Margin="10 0" Content="↩" Click="btnGoBack_Click"/>
-        <TextBlock Background="#FFFFF0F1" Text="👤 Добавление нового пользователя" FontSize="26" 
-                   Margin="25 10" Foreground="OrangeRed" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-
+        <Button x:Name="btnGoBack" HorizontalAlignment="Left" FontSize="28" Padding="5 0" VerticalAlignment="Top" Margin="10 0" Content="↩" Click="btnGoBack_Click"/>
+        <TextBlock Background="#FFFFF0F1" Text="👤 Добавление нового пользователя" FontSize="26" Foreground="OrangeRed" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"/>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
             <StackPanel Background="#CCF0F8FF">
@@ -33,7 +30,7 @@
                 <TextBox x:Name="tbEmail" FontSize="22" Margin="5"/>
                 <TextBlock Text="Пароль" FontSize="26" Margin="10 0"/>
                 <TextBox x:Name="tbPass" FontSize="22" Margin="5"/>
-                <TextBlock Text="Роль   " FontSize="26" Margin="10 0"/>
+                <TextBlock Text="Роль" FontSize="26" Margin="10 0"/>
                 <ComboBox x:Name="cbRole" FontSize="22" DisplayMemberPath="name" Margin="5"/>
                 <Button Content="Добавить" FontSize="24" Margin="20" Padding="15 0" Click="Button_Click"/>
             </StackPanel>

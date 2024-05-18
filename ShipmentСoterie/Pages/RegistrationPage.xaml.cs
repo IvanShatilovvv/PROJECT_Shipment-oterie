@@ -44,7 +44,7 @@ namespace ShipmentСoterie.Pages
                 string.IsNullOrWhiteSpace(tbPassword.Password) ||
                 string.IsNullOrWhiteSpace(tbPassword2.Password))
             {
-                MessageBox.Show("WHITESPACE error", "error");
+                MessageBox.Show("Ошибка пробела", "Ошибка");
                 return;
             }
 
@@ -52,14 +52,14 @@ namespace ShipmentСoterie.Pages
             {
                 if (item.login == tbLogin.Text || item.login == tbEmail.Text)
                 {
-                    MessageBox.Show("LOGIN and/or EMAIL error", "error");
+                    MessageBox.Show("LOGIN и/или EMAIL неправильные", "Ошибка");
                     return;
                 }
             }
 
             if(tbPassword.Password!=tbPassword2.Password)
             {
-                MessageBox.Show("PASSWORD error", "error");
+                MessageBox.Show("Пароль неправильный", "Ошибка");
                 return;
             }
 
@@ -71,7 +71,7 @@ namespace ShipmentСoterie.Pages
             db.user.Add(newUser);
             db.SaveChanges();
 
-            MessageBox.Show("Аккаунт создан");
+            MessageBox.Show("Аккаунт создан", "Успешно!!!");
             MainWindow.mainFrame.GoBack();
         }
 

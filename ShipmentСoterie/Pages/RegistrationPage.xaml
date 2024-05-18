@@ -24,7 +24,7 @@
             </Border.Effect>
             
             <StackPanel >
-                <TextBlock Text="Регистрация" FontSize="28" Background="Wheat" Padding="25 0" Margin="75 15" TextAlignment="Center" Foreground="#FF845454" FontWeight="Black"/>
+                <TextBlock Text="Регистрация" FontSize="28" Background="Wheat" Padding="25 0" Margin="75 15" TextAlignment="Center" Foreground="#FF845454" FontWeight="Black" Height="43"/>
 
                 <StackPanel>
                     <TextBlock Text="Логин:" FontSize="18"/>

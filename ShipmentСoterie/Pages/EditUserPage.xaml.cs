@@ -56,13 +56,13 @@ namespace ShipmentСoterie.Pages
             curUser.roleId = (cbRole.SelectedItem as Role).Id;
             db.Update(curUser);
             db.SaveChanges();
-            MessageBox.Show("Изменения успешно");
+            MessageBox.Show("Успешно изменено");
             MainWindow.mainFrame.Navigate(new UserAdministrationPage());
         }
 
         private void btnGoBack_Click(object sender, RoutedEventArgs e)
         {
-            var a = MessageBox.Show("Изменения будут утеряны", "Угроза", MessageBoxButton.YesNo);
+            var a = MessageBox.Show("Изменения будут утеряны", "Предупреждение", MessageBoxButton.YesNo);
             if(a==MessageBoxResult.Yes) MainWindow.mainFrame.Navigate(new UserAdministrationPage());
         }
     }

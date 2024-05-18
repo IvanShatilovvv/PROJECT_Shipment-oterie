@@ -14,14 +14,23 @@
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
 
-        <Button Background="Transparent" Content="Нет аккаунта? Регистрация" HorizontalAlignment="Right" FontSize="12" Padding="5" Margin="10" Click="Button_Click"/>
+        <Button Background="Transparent" Content="Регистрация" HorizontalAlignment="Right" FontSize="12" Padding="5" Margin="10" Click="Button_Click"/>
         
         <UniformGrid Columns="2" Rows="3" Grid.Row="1">
             <TextBlock Text="🍽️" HorizontalAlignment="Left" Margin="20" FontSize="48"/>
             <TextBlock Text="🍔" HorizontalAlignment="Right" Margin="50" Padding="10" FontSize="48"/>
             <TextBlock Text="🌮 🥪" HorizontalAlignment="Left" Margin="50" FontSize="48"/>
             <TextBlock Text="🍕" HorizontalAlignment="Right" Margin="25" Padding="10" FontSize="48"/>
-            <TextBlock Text="" HorizontalAlignment="Left" FontSize="48" Margin="25 -35"/>
+            <TextBlock Text="🥪" HorizontalAlignment="Left" FontSize="48" Margin="25,-35,0,83" RenderTransformOrigin="0.5,0.5">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180.846"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
             <TextBlock Text="🍨" HorizontalAlignment="Right" Padding="10" Margin="0" FontSize="48" Width="198"/>
         </UniformGrid>
 
@@ -30,7 +39,7 @@
                 <DropShadowEffect Direction="-45" BlurRadius="10" ShadowDepth="2"/>
             </Border.Effect>
             <StackPanel >
-                <TextBlock Text="Вход" FontSize="32" Background="#FF845454" Padding="25 5" Margin="75 10" TextAlignment="Center" Foreground="Wheat" FontWeight="Black"/>
+                <TextBlock Text="ВХОД" FontSize="32" Background="#FF845454" Padding="25 5" Margin="75 10" TextAlignment="Center" Foreground="Wheat" FontWeight="Black"/>
 
                 <StackPanel>
                     <TextBlock Text="Логин:" FontSize="28"/>

@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
 
         <Button Content="↩" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Click="Button_Click_1"/>
-        <TextBlock Text="Профиль пользователя" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="26" FontWeight="SemiBold"/>
+        <TextBlock Text="ВАШ ПРОФИЛЬ" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="26" FontWeight="SemiBold"/>
 
         <StackPanel x:Name="panelInfo" Grid.Row="1" Margin="15" Background="Tan">
             <TextBlock Text="Имя" FontSize="22" Margin="15 0"/>
@@ -44,6 +44,6 @@
 
             <Button Background="Transparent" Content="Выход" Foreground="Red" FontSize="24" Margin="25" Click="Button_Click"/>
         </StackPanel>
-
+        
     </Grid>
 </Page>

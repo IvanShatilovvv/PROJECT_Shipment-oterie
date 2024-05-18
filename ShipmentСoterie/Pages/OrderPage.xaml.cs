@@ -80,7 +80,7 @@ namespace ShipmentСoterie.Pages
             db.order.Update(newOrder);
             db.SaveChanges();
 
-            MessageBox.Show("Спасибо за заказ!");
+            MessageBox.Show("Спасибо за заказ!", "Оплата успешна");
             MainWindow.mainFrame.Navigate(new HomePage());
         }
     }

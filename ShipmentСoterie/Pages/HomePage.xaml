@@ -16,7 +16,7 @@
 
         <Image Source="/Images/food2.jpg" Grid.RowSpan="2" Opacity="0.5"/>
 
-        <Button Click="btnAdmin_Click" x:Name="btnAdmin" Background="Tan" Content="Сервис борьбы с голодом" Padding="20 5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="DemiBold"/>
+        <Button Click="btnAdmin_Click" x:Name="btnAdmin" Background="Tan" Content="Сервис по доставке еды" Padding="20 5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="DemiBold"/>
         <Button Content="👤" Background="Tan" HorizontalAlignment="Right" FontSize="28" FontWeight="DemiBold" Margin="5" Click="Button_Click"/>
         <Button Content="🗑️" Background="Tan" HorizontalAlignment="Left" FontSize="24" FontWeight="DemiBold" Margin="5" Click="Button_Click_2"/>
 

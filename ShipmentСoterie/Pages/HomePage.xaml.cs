@@ -55,7 +55,7 @@ namespace ShipmentСoterie.Pages
         {
             db.orderList.Add(new() { order = curOrder, productId = (lbMain.SelectedItem as Product).id });
             db.SaveChanges();
-            MessageBox.Show("Товар добавлен в ваш заказ", "Ok");
+            MessageBox.Show("Товар добавлен в ваш заказ", "Успешно");
             //MessageBox.Show(((ListBox)sender).SelectedItem.ToString());
             //OrderList newFood = new() { order=curOrder, product= };
         }
